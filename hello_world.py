@@ -42,14 +42,14 @@
 # user_input = input('Give me a number: ')
 # print("Here's your value as a string,", str(user_input),",an integer,",int(user_input),",and a float,",float(user_input))
 
-# 10. Consider the expression (a + b) * c , but with string values for a, b, and c. Enter that into the Python shell. What happens? Why?
-# Strings must be converted to integers or floats to be added etc
+# # 10. Consider the expression (a + b) * c , but with string values for a, b, and c. Enter that into the Python shell. What happens? Why?
+# # Strings must be converted to integers or floats to be added etc
 
 
-# a = '4'
-# b = '6'
-# c = '7'
-# print((a + b) * c)
+# # a = '4'
+# # b = '6'
+# # c = '7'
+# # print((a + b) * c)
 
 # 11. (Integer operators) One way to determine whether an integer is even is to divide the number by 2 and check the remainder. Write a three-line program that prompts for a number, converts the input to an integer, and prints a 0 if the number is even and a 1 if the number is odd.
 
@@ -74,6 +74,6 @@
 # user_height = int(input("Please enter your height in cms: "))
 # print("Your BMI is", (user_weight / user_height ** 2)* 10000)
 
-user_weight = int(input("Please enter your weight in pounds: "))
-user_height = int(input("Please enter your height in inches: "))
-print("Your BMI is", (user_weight / user_height ** 2)* 703)
+# user_weight = int(input("Please enter your weight in pounds: "))
+# user_height = int(input("Please enter your height in inches: "))
+# print("Your BMI is", (user_weight / user_height ** 2)* 703)

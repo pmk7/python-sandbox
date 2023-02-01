@@ -45,7 +45,16 @@
 # ans = [num for num in num_list if num % 12 == 0]
 # print(ans)
 
-ran_str = 'amazing'
-ans = [con for con in ran_str if con not in 'aeiou']
-print(ans)
+# ran_str = 'amazing'
+# ans = [con for con in ran_str if con not in 'aeiou']
+# print(ans)
 
+# num_range = range(0,3)
+
+# ans = [[num for num in num_range] for val in num_range]
+# print(ans)
+
+
+# jumble = 'grinwrnblskmnfoira'
+# organised = ''.join(sorted(jumble))
+# print(organised)
