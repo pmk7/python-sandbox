@@ -1,3 +1,8 @@
+# Loops, if else
+
+# ............
+
+
 # if between 40 - 60 cigars consumed AND weekday = party successful
 # if weekend no upper limit
 # 
@@ -33,7 +38,7 @@
 #     print("That's not possible! Try again!")
 #     quit()
 
-# if user_input > 40:
+# if user_input >= 40:
 #     print('You passed!')
 # else:
 #     print('You failed :(')
@@ -56,8 +61,9 @@
 # user_input2 = float(input('And second number is...? '))
 # user_operator = input('+, -, * or / : ')
 
-# # if user_operator != '+' or '-' or '*' or '/':
-# #     print("That's not a valid operator!")
+# if user_operator != '+' or '-' or '*' or '/':
+#     print("That's not a valid operator!")
+#     quit()
 # if user_operator == '+':
 #     print(user_input1 + user_input2)
 # elif user_operator == '-':
@@ -80,7 +86,9 @@
 # elif user_input1 > user_input2 and user_input1 < user_input3:
 #     print(user_input3)
 # elif user_input2 > user_input1 and user_input2 < user_input3:
-#     print(user_input3)        
+#     print(user_input3)   
+# else:
+#     print(user_input2)     
 
 
 # 5. What output occurs for the following program on the given input?
@@ -106,7 +114,7 @@
 
 # 6. How many three-digit numbers are divisible by 17? Write a program to print them.
 
-# num_range = range(100,999)
+# num_range = range(100,1000)
 
 # count = 0
 
@@ -137,16 +145,26 @@
 
 
 
-x = int(input('Give me a number: '))
+# x = int(input('Give me a number: '))
 
-ans = 0
+# ans = 0
 
-for num in range(1, x + 1):
-    for sin in range(1, num +1):  
-        ans += sin
-    print(num,sin,ans)
-    ans = 0
+# for num in range(1, x + 1):
+#     for sin in range(1, num +1):  
+#         ans += sin
+#     print(ans, sin)
+#     ans = 0
 
+
+
+X_upper = int(input('Give me a number: '))
+
+for x in range(1, X_upper + 1):
+    sum_x = 0
+    for i in range(1, x +1):
+        sum_x += i
+    print("The sum from 1 to ", x, "is", sum_x)
+    
 
 
  
