@@ -28,12 +28,12 @@
 
 # num_list = [1,2,3,4,5,6]
 
-def func(num_list, num):
-  if num in num_list:
-    return True
-  return False
+# def func(num_list, num):
+#   if num in num_list:
+#     return True
+#   return False
 
-print(func([1,2,7,8], 5))
+# print(func([1,2,7,8], 5))
 # answer2 = [x for x in num_list if x % 2 == 0]
 # print(answer2)
 
