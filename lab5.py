@@ -83,12 +83,12 @@ binary_str = ''
 
 if (sample_int != 0):
   while (sample_int >= 1):
-    if(sample_int % 2==0):
+    if(sample_int % 2== 0):
       binary_str = binary_str + "0"
       sample_int = sample_int / 2
     else:
       binary_str = binary_str + "1"
-      sample_int = (sample_int-1)/2
+      sample_int = (sample_int -1) /2
 
 print(binary_str)      
 
