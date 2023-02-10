@@ -71,8 +71,7 @@ str_word = 'Hello World'
 # output_str = ''
 
 # for item in sample_str:
-#   unicode_val = ord(item) + 1
-#   output_str += chr(unicode_val)
+#   output_str += chr(ord(item) + 1)
   
 # print(output_str)
 
@@ -88,7 +87,7 @@ if (sample_int != 0):
       sample_int = sample_int / 2
     else:
       binary_str = binary_str + "1"
-      sample_int = (sample_int -1) /2
+      sample_int = (sample_int -1) / 2
 
 print(binary_str)      
 
@@ -110,10 +109,11 @@ index = 0
 
 for item in binary_str:
   binary_to_int += (2 ** index * int(item))
-  print(binary_to_int)
   index += 1
 
 print(binary_to_int)
+
+
 
 
     
