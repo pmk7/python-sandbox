@@ -1,4 +1,8 @@
 # keyword def 
+# FUNCTIONS
+# ADD DOCSTRING TO FUNCTIONS
+
+# IF FUNCTION RETURNS NO VALUE IT IS A 'PROCEDURE'
 
 # def calc(a,b):
 #   return a + b
