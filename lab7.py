@@ -9,7 +9,7 @@
 #   for x in range(1,num + 1):
 #     print(x)
   
-# print(output_num(7))  
+# output_num(7)
 
 # 2.
 # def odd_or_even(num):
@@ -20,7 +20,7 @@
 
 # odd_or_even(6)
 
-3.
+# 3.
 # def multiply(num):
 #   """iterates from zero to num and multiplies current element by 9""" 
 #   for i in range(0,num + 1):
@@ -48,9 +48,9 @@
 #   fact_num = 1
 #   for i in range(1, num + 1 ):
 #     fact_num *= i
-#     print(fact_num)
+#   return fact_num
   
-# factorial(5)
+# print(factorial(5))
 
 
 # 6.
@@ -72,6 +72,7 @@
 #     if i % 2 != 0:
 #       new_str += char
 #   return new_str
+
   
 
 # print(remove_odd_chars('computer'))
@@ -110,15 +111,21 @@
 
 
 # 11.
+# def player1(beans):
+#  return beans - 1
+
+
+# def player2(beans):
+#  return beans - 1
+
+# beans = 16
+
+
+# while beans > 0:
+#   beans = player1(beans)
+#   if beans == 0:
+#     print('player 2 wins!')
   
-
-# def game():
-#   pile_of_beans = 16
-#   player1(pile_of_beans - 1)
-#   return pile_of_beans - 1
-  
-
-def player1(pile_of_beans):
-  return pile_of_beans - 1
-
-
+#   beans = player2(beans)
+#   if beans == 0:
+#     print('player 1 wins!')
