@@ -87,7 +87,7 @@ boiling_p_gas4 = '-182'
 # if ran_num1 == ran_num1:
 #   ran_num1 = random.randint(1,10)
 #   ran_num2 = random.randint(1,10)
-#   new_str = string.replace(string[ran_num1],string[ran_num2])
+#   new_str = string.replace(string[ran_nu 1],string[ran_num2])
 #   print(new_str)
 #   print(ran_num1, ran_num2)
 

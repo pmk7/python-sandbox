@@ -67,29 +67,28 @@ str_word = 'Hello World'
 
 # 8
 
-# sample_str = 'abc'
-# output_str = ''
+sample_str = 'abc'
+output_str = ''
 
-# for item in sample_str:
-#   output_str += chr(ord(item) + 1)
+for item in sample_str:
+  output_str += chr(ord(item) + 1)
   
-# print(output_str)
+print(output_str)
 
 # 9
-sample_int = int(input('Give me a number: '))
-binary_str = ''
+#  
 
 
-if (sample_int != 0):
-  while (sample_int >= 1):
-    if(sample_int % 2== 0):
-      binary_str = binary_str + "0"
-      sample_int = sample_int / 2
-    else:
-      binary_str = binary_str + "1"
-      sample_int = (sample_int -1) / 2
+# if (sample_int != 0):
+#   while (sample_int >= 1):
+#     if(sample_int % 2== 0):
+#       binary_str = binary_str + "0"
+#       sample_int = sample_int / 2
+#     else:
+#       binary_str = binary_str + "1"
+#       sample_int = (sample_int -1) / 2
 
-print(binary_str)      
+# print(binary_str)      
 
 
 # reversed_str = ''
@@ -104,14 +103,14 @@ print(binary_str)
 #   binary_to_int += i ** 2
 # print(binary_to_int)
 
-binary_to_int = 0
-index = 0
+# binary_to_int = 0
+# index = 0
 
-for item in binary_str:
-  binary_to_int += (2 ** index * int(item))
-  index += 1
+# for item in binary_str:
+#   binary_to_int += (2 ** index * int(item))
+#   index += 1
 
-print(binary_to_int)
+# print(binary_to_int)
 
 
 

@@ -35,10 +35,35 @@
 
 # print(find_needle(haystack))
 
-my_str = 'hi'
-my_str.
+# my_str = 'hi'
+# my_str.
 
-def remove_char(s):
-  return s[1:-1]
+# def remove_char(s):
+#   return s[1:-1]
   
-print(remove_char('hello'))
+# print(remove_char('hello'))
+
+def high_and_low(numbers):
+  highest = 0
+  lowest = 5
+  arr = numbers.split()
+  num_list = []
+  for x in arr:
+    num_list.append(int(x))
+    
+  for el in num_list:
+    if el > highest:
+      highest = el
+ 
+        
+  for el in num_list:
+    if el < lowest:
+      lowest = el
+  
+  
+  return f"{highest} {lowest}"
+
+    
+      
+      
+print(high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))      
