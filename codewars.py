@@ -188,19 +188,56 @@
 # duplicate_count("aabbcde")
 
 
-def camel_case(string):
-  # ans = ''.join([x.capitalize() for x in string.split()])
-  # return ans
+# def camel_case(string):  
+#   ans = string.replace('-', ' ').replace('_',' ').split()
   
-  ans = string.replace('-', ' ').replace('_',' ').split()
+#   result = []
+#   for i,x in enumerate(ans):
+#     if i == 0:
+#       result.append(x)
+#     else:
+#       result.append(x.capitalize())
   
-  result = []
-  for x in ans:
-    result.append(x.capitalize())
-  res = ''.join(result)
-  return res[0].lowercase()
+#   res = ''.join(result)
+#   return res
+
 
 
     
-print(camel_case("the_cat_was-kawaii"))
+# print(camel_case("the_cat_was-kawaii"))
+
+def score(dice):
+    ones = ''
+    twos = ''
+    threes = ''
+    fours = ''
+    fives = ''
+    sixes = ''
     
+    score = 0
+    
+    for num in dice:
+      if num == 1:
+        ones += str(1)
+      elif num == 2:
+           twos += str(2)
+      elif num == 3:
+        threes += str(3)
+      elif num == 4:
+        fours += str(4)
+      elif num == 5:
+        fives += str(5)
+      else:
+        sixes += str(6)
+        
+    if len(ones) == 3:
+      score += 1000
+    elif len(ones) == 4:
+      score += 1100
+    return print(score)   
+     
+     
+  
+    
+    
+score([1, 1, 1, 1, 2])    
