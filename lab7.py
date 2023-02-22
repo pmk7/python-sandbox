@@ -49,8 +49,14 @@
 #   for i in range(1, num + 1 ):
 #     fact_num *= i
 #   return fact_num
+
+def factorial(num):
+  """recursive example of factorial"""
+  if num == 1:
+    return 1
+  return num * factorial(num - 1)
   
-# print(factorial(5))
+print(factorial(5))
 
 
 # 6.

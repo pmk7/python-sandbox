@@ -206,38 +206,110 @@
     
 # print(camel_case("the_cat_was-kawaii"))
 
-def score(dice):
-    ones = ''
-    twos = ''
-    threes = ''
-    fours = ''
-    fives = ''
-    sixes = ''
+# def score(dice):
+#     ones = ''
+#     twos = ''
+#     threes = ''
+#     fours = ''
+#     fives = ''
+#     sixes = ''
     
-    score = 0
+#     score = 0
     
-    for num in dice:
-      if num == 1:
-        ones += str(1)
-      elif num == 2:
-           twos += str(2)
-      elif num == 3:
-        threes += str(3)
-      elif num == 4:
-        fours += str(4)
-      elif num == 5:
-        fives += str(5)
-      else:
-        sixes += str(6)
+#     for num in dice:
+#       if num == 1:
+#         ones += str(1)
+#       elif num == 2:
+#            twos += str(2)
+#       elif num == 3:
+#         threes += str(3)
+#       elif num == 4:
+#         fours += str(4)
+#       elif num == 5:
+#         fives += str(5)
+#       else:
+#         sixes += str(6)
         
-    if len(ones) == 3:
-      score += 1000
-    elif len(ones) == 4:
-      score += 1100
-    return print(score)   
+#     if len(ones) == 3:
+#       score += 1000
+#     elif len(ones) == 4:
+#       score += 1100
+#     return print(score)   
      
      
   
     
     
-score([1, 1, 1, 1, 2])    
+# score([1, 1, 1, 1, 2])   
+ 
+# def persistence(n): 
+#   """"return number of times it takes to reduce n to single digit"""
+#   counter = 0
+#   res = n
+#   if res < 10:
+#    return counter
+#   else:
+#     counter += 1
+#     ans = str(res)
+#     # Only works on two digit numbers
+#     res = int(ans[0]) * int(ans[1]) 
+#     print(res)
+#     return persistence(res) 
+    
+#   #  return print(counter)
+      
+    
+# persistence(39)
+# # print(persistence(729))
+# print(persistence(126))
+
+
+def sum_of_intervals(intervals):
+  ans = 0
+  for el in intervals:
+    if el == temp
+    print(el)
+    temp = el[1]
+    ans += temp - el[0]
+
+  # return ans
+  
+print(10 - -100000000)  
+  
+# print(sum_of_intervals([
+#    [1, 4],
+#    [7, 10],
+#    [3, 5]
+# ])  )
+# print(sum_of_intervals([(1, 5],[6, 10)] ))
+
+
+# print(sum_of_intervals([
+#    [1, 2],
+#    [6, 10],
+#    [11, 15]
+# ] ))
+
+# print(sum_of_intervals( [
+#    [1, 5],
+#    [10, 20],
+#    [1, 6],
+#    [16, 19],
+#    [5, 11]
+# ] ))
+  
+  
+def first_non_repeating_letter(string):
+  if len(string) == 0:
+    return
+  
+  ans = []
+  for letter in string:
+    print(string.lower())
+    if string.count(letter) == 1:
+      ans.append(letter)
+    print(ans)  
+  
+  return ans[0]  
+    
+# print(first_non_repeating_letter('sTreSS')  )

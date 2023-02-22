@@ -1,7 +1,7 @@
 # LISTS
 
 # 1.
-sample_lst = [1,2,3,4,5,6]
+sample_lst = [1,2,3,7,4,5,6]
 
 # def total(lst):
 #   el_total = 0
@@ -21,7 +21,7 @@ sample_lst = [1,2,3,4,5,6]
 #   return biggest 
 
 
-# print(largest(sample_lst) )     
+# print(largest(sample_lst))     
 
 
 # 3.
@@ -82,9 +82,10 @@ nums2 = [10,9,8,7,6]
 
 # def compare_list(nums1, nums2):
 #   for el in nums1:
-#     for i in nums2:
-#       if el == i:
-#         return True
+#     if el in nums2:
+#       return True
+    
+#   return False
       
   
 # def compare_list(nums1, nums2):
@@ -107,7 +108,7 @@ def num(lst):
   total = ''
   for el in lst:
     total += str(el)
-  print(total)
+  print(int(total))
 
 
 num(sample)
@@ -116,5 +117,16 @@ num(sample)
 listA = [10,20,30,40,50]
 
 def add_neighbors(lst):
+  count1 = 0
+  count2 = 1
   new_list = []
+  for i in listA:
+    if (len(listA) == 1):
+      new_list = listA
+    elif i == 0:
+    
+    else:
+    new_list.append(listA[i - 1] + listA[i] + listA[i + 1])
   
+  
+add_neighbors(listA)

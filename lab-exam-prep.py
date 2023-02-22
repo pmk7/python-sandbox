@@ -1,29 +1,33 @@
-# def sum_divisors(num):
-#   """print sum of all divisors of argument"""
-#   if num < 0:
-#     return num
-#   else:
-#     total = 0
-#     sequence = ''
-#     for el in range(1,num +1):
-#       if num % el == 0:
-#         sequence += str(el) + ' + '
-#         total += int(el)
-#       new_str = sequence[0:-2]
-#   print(f"{new_str}= {total}")
+def sum_divisors(num):
+  """print sum of all divisors of argument"""
+  if num < 0:
+    return print("Only positive numbers accepted")
+  else:
+    total = 0
+    sequence = ''
+    for el in range(1,num +1):
+      if num % el == 0:
+        total += el
+        sequence += str(el) + ' + '
+      new_str = sequence[0:-2]
+  print(f"{new_str}= {total}")
   
   
 
-# sum_divisors(42)
+# sum_divisors(-1)
 
 # 2.
-# sample_str = 'Monty Python'
-# encrypted = ''
 
-# for i,char in enumerate(sample_str):
-#   encrypted += chr(ord(char) + i) 
-#   print(encrypted,i)
+
+# def encrypt_str():
+#   sample_str = input('Give me a sentence to encrypt: ')
+#   encrypted = ''
+#   for i,char in enumerate(sample_str):
+#     encrypted += chr(ord(char) + i) 
+#   return encrypted 
   
+  
+# print(encrypt_str())
 
 # 3
 # import string
@@ -44,49 +48,64 @@
   
 # format_time("24/012/2020 18:45:00")
 
-# 4.
-# user_input = int(input('Give me a number: '))
+4.
+user_input = int(input('Give me a number: '))
 
-# def check_kaprekar(num):
-#   total = num * num
-#   pieces = [int(x) for x in str(total)]
-#   length = len(pieces)
-#   middle = length // 2
+def check_kaprekar(num):
+  total = num * num
+  pieces = [int(x) for x in str(total)]
+  length = len(pieces)
+  middle = length // 2
   
-#   piece1_str = ''
-#   piece2_str = ''
-#   piece3_str = ''
-#   piece4_str = ''
-
+  piece1_str = ''
+  piece2_str = ''
+  piece3_str = ''
+  piece4_str = ''
   
-#   piece1, piece2 = pieces[:middle], pieces[middle:]
-#   piece3, piece4 = pieces[:middle + 1], pieces[middle + 1:]
+  piece1, piece2 = pieces[:middle], pieces[middle:]
+  piece3, piece4 = pieces[:middle + 1], pieces[middle + 1:]
 
-#   for el in piece1:
-#    piece1_str += str(el)
-#   for el in piece2:
-#    piece2_str += str(el)
-#   for el in piece3:
-#    piece3_str += str(el)
-#   for el in piece4:
-#    piece4_str += str(el)
+  for el in piece1:
+   piece1_str += str(el)
+  for el in piece2:
+   piece2_str += str(el)
+  for el in piece3:
+   piece3_str += str(el)
+  for el in piece4:
+   piece4_str += str(el)
    
-#   if num == int(piece1_str) + int(piece2_str) or num == int(piece3_str) + int(piece4_str):
-#     return True
-#   else:
-#     return False
+  if num == int(piece1_str) + int(piece2_str) or num == int(piece3_str) + int(piece4_str):
+    return True
+  else:
+    return False
     
+# BETTER KAPREKAR SOLUTION
+
+def is_kaprekar(number):
   
+  squared_num = number * number 
+  squared_num_str = str(squared_num)
   
-# def all_nums(user_input):
-#   for el in range(1, user_input):
-#     if check_kaprekar(el) == True:
-#       print(el)
+  for i in range(1, len(squared_num_str) ):
+    sum_split = int(squared_num_str[:i]) + int(squared_num_str[i:])
+    
+    if sum_split == number:
+      return True
+  
+  return False  
+
+    
+print(is_kaprekar(45))  
+  
+def all_nums(user_input):
+  for el in range(1, user_input):
+    if check_kaprekar(el) == True:
+      print(el)
       
 
-# check_kaprekar(user_input)
+check_kaprekar(user_input)
 
-# all_nums(user_input)
+all_nums(user_input)
 
 # 5.
 sentence = "I love you for a lifetime not only for a day I love you for who you are not what you do or say"
@@ -119,7 +138,7 @@ def replace_all(string,old,new):
   arr = string.split()
  
   for i,el in enumerate(arr):
-    if arr[i] == old[0]:
+    if el == old[0]:
       arr[i] = new[0]
     if arr[i] == old[1]:
       arr[i] = new[1]  
@@ -134,4 +153,4 @@ def replace_all(string,old,new):
   
 # replace_all('This is a wonderful morning',['is','morning'],['was','evening']) 
 
-replace_all("John and Bill went to the shop", ["John","Bill", "shop"],["Mary","Ann","cinema"])
+# replace_all("John and Bill went to the shop", ["John","Bill", "shop"],["Mary","Ann","cinema"])
