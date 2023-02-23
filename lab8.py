@@ -117,16 +117,15 @@ num(sample)
 listA = [10,20,30,40,50]
 
 def add_neighbors(lst):
-  count1 = 0
-  count2 = 1
   new_list = []
   for i in listA:
     if (len(listA) == 1):
       new_list = listA
     elif i == 0:
-    
+      
+      
     else:
-    new_list.append(listA[i - 1] + listA[i] + listA[i + 1])
+      new_list.append(listA[i - 1] + listA[i])
   
   
 add_neighbors(listA)

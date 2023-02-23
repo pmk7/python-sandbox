@@ -264,17 +264,17 @@
 # print(persistence(126))
 
 
-def sum_of_intervals(intervals):
-  ans = 0
-  for el in intervals:
-    if el == temp
-    print(el)
-    temp = el[1]
-    ans += temp - el[0]
+# def sum_of_intervals(intervals):
+#   ans = 0
+#   for el in intervals:
+#     if el == temp
+#     print(el)
+#     temp = el[1]
+#     ans += temp - el[0]
 
-  # return ans
+#   # return ans
   
-print(10 - -100000000)  
+# print(10 - -100000000)  
   
 # print(sum_of_intervals([
 #    [1, 4],
@@ -313,3 +313,18 @@ def first_non_repeating_letter(string):
   return ans[0]  
     
 # print(first_non_repeating_letter('sTreSS')  )
+
+
+def format_duration(seconds):
+  minutes,seconds = divmod(seconds,60)
+  hours,minutes = divmod(minutes,60)
+  days, hours = divmod(hours,24)
+  years,days = divmod(days,365)
+  
+  
+    
+
+  
+
+format_duration(62)
+
