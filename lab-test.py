@@ -1,7 +1,6 @@
 # LAB TEST
 # REMEMBER DOCSTRING
 
-user_input = (int(input("Please enter a number: ")))    
 
 def sum_digits_squared(number):
   """returns sum of squared digits"""
@@ -10,6 +9,8 @@ def sum_digits_squared(number):
   for num in str_num:
     answer += int(num) ** 2
   return answer
+
+# print(sum_digits_squared(23))
 
 
 def check_happy_numbers(num):
@@ -36,13 +37,15 @@ def show_all_happy_numbers(n):
   if check_happy_numbers(n):
   # calling check_happy_numbers function to check
   # if it return True, we loop over every number from to n
+  
     for element in range(1,n):
       if check_happy_numbers(element):
         # checking if individual element in range is a happy number. If yes, we concatenate that element to the happy_num_sequence
         happy_num_sequence += str(element) + ' '
     print(f"All happy numbers up to {n} are:\n{happy_num_sequence}{n}")
-  else:
+    else:
     print("This is not happy number")
   
   
+user_input = (int(input("Please enter a number: ")))    
 show_all_happy_numbers(user_input)
