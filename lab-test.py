@@ -25,7 +25,6 @@ def check_happy_numbers(num):
   else:
   # recursively checking if num is happy number, breaking problem into smaller pieces using recursion
    ans = sum_digits_squared(num)
-  #  print(ans)
    return check_happy_numbers(ans)
 
 
@@ -34,17 +33,18 @@ def show_all_happy_numbers(n):
   # storing all happy numbers as a string
   happy_num_sequence = ''
 
-  if check_happy_numbers(n):
-  # calling check_happy_numbers function to check
-  # if it return True, we loop over every number from to n
-  
-    for element in range(1,n):
-      if check_happy_numbers(element):
+  # if check_happy_numbers(n):
+  # calling check_happy_numbers function to check if n is happy number
+  # if True, we loop over every number from 1 to n
+   
+
+  for element in range(1,n):
+    if check_happy_numbers(element):
         # checking if individual element in range is a happy number. If yes, we concatenate that element to the happy_num_sequence
         happy_num_sequence += str(element) + ' '
     print(f"All happy numbers up to {n} are:\n{happy_num_sequence}{n}")
-    else:
-    print("This is not happy number")
+  # else:
+  #   print("This is not happy number")
   
   
 user_input = (int(input("Please enter a number: ")))    

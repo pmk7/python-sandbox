@@ -242,26 +242,24 @@
     
 # score([1, 1, 1, 1, 2])   
  
-# def persistence(n): 
-#   """"return number of times it takes to reduce n to single digit"""
-#   counter = 0
-#   res = n
-#   if res < 10:
-#    return counter
-#   else:
-#     counter += 1
-#     ans = str(res)
-#     # Only works on two digit numbers
-#     res = int(ans[0]) * int(ans[1]) 
-#     print(res)
-#     return persistence(res) 
+def persistence(n): 
+  """"return number of times it takes to reduce n to single digit"""
+  answer = n
+  str_num = str(answer)
+  count = 0
+  new_answer = 0
+  if len(str_num) == 3:
+    for num in str_num:
+      new_answer *= int(num)
+      print(new_answer)
+        
     
-#   #  return print(counter)
+    
+    
+  #  return print(counter)
       
     
-# persistence(39)
-# # print(persistence(729))
-# print(persistence(126))
+persistence(999)
 
 
 # def sum_of_intervals(intervals):
@@ -299,32 +297,58 @@
 # ] ))
   
   
-def first_non_repeating_letter(string):
-  if len(string) == 0:
-    return
+# def first_non_repeating_letter(string):
+#   if len(string) == 0:
+#     return
   
-  ans = []
-  for letter in string:
-    print(string.lower())
-    if string.count(letter) == 1:
-      ans.append(letter)
-    print(ans)  
+#   ans = []
+#   for letter in string:
+#     print(string.lower())
+#     if string.count(letter) == 1:
+#       ans.append(letter)
+#     print(ans)  
   
-  return ans[0]  
+#   return ans[0]  
     
 # print(first_non_repeating_letter('sTreSS')  )
 
 
-def format_duration(seconds):
-  minutes,seconds = divmod(seconds,60)
-  hours,minutes = divmod(minutes,60)
-  days, hours = divmod(hours,24)
-  years,days = divmod(days,365)
+# def format_duration(seconds):
+#   minutes,seconds = divmod(seconds,60)
+#   hours,minutes = divmod(minutes,60)
+#   days, hours = divmod(hours,24)
+#   years,days = divmod(days,365)
+  
+#   ans = {
+#     "years":years,
+#     "days":days,
+#     "hours":hours,
+#     "minutes":minutes,
+#     "seconds": seconds,   
+#   }
+  
+#   # print(dir({}))
+  
+#   count = 0
+  
+#   for key, val in ans.items():
+#     if val == 1:
+#       print(f"{val} {key[0:-1]}")
+#     elif val and count == 0:
+#       count += 1
+#       print(f"{val} {key}")
+#     # else:
+#       # return
+      
+
+  
+  
   
   
     
 
   
 
-format_duration(62)
+# format_duration(132030240)
+# format_duration(61)
 
