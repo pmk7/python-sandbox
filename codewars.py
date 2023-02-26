@@ -243,15 +243,15 @@
 # score([1, 1, 1, 1, 2])   
  
 def persistence(n): 
-  """"return number of times it takes to reduce n to single digit"""
-  answer = n
-  str_num = str(answer)
+  """return number of times it takes to reduce n to single digit"""
   count = 0
-  new_answer = 0
-  if len(str_num) == 3:
-    for num in str_num:
-      new_answer *= int(num)
-      print(new_answer)
+  while n >= 10:
+    digits = [int(d) for d in str(n)]
+    result = [digits[i] * digits[i+1] for i in range(len(digits)-1)]
+    n = reduce(lambda x, y: x*y, result)
+    count += 1
+    
+  return (n, count)
         
     
     
